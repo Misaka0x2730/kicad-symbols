@@ -558,6 +558,12 @@ K SMPS PWM Controller
 F https://www.microsemi.com/document-portal/doc_view/11120-sg1525a-sg1527a-datasheet
 $ENDCMP
 #
+$CMP Si3402-B
+D Fully-Integrated IEEE 802.3-compliant POE PD Interface and low-EMI switching regulator, QFN-20
+K POE PWM Controller
+F https://www.silabs.com/documents/public/data-sheets/Si3402-B.pdf
+$ENDCMP
+#
 $CMP TDA4862
 D Power Factor Controller IC for High Power Factor and Active Harmonic Filter, DIP-8/SOIC-8
 K PFC SMPS Controller

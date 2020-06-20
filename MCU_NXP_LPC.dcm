@@ -564,6 +564,14 @@ K ARM, 16-bit, 32-bit, ARM7, NXP, microcontroller
 F http://www.nxp.com/documents/data_sheet/LPC2141_42_44_46_48.pdf
 $ENDCMP
 #
+$CMP LPC4330FBD144
+F https://www.nxp.com/docs/en/data-sheet/LPC4350_30_20_10.pdf
+$ENDCMP
+#
+$CMP LPC4330FET180
+F https://www.nxp.com/docs/en/data-sheet/LPC4350_30_20_10.pdf
+$ENDCMP
+#
 $CMP LPC811M001JDH16
 D 32-bit ARM Cortex-M0 microcontroller, 8kB flash, 2kB SRAM
 K ARM, 32-bit, Cortex-M0, M0, NXP, microcontroller

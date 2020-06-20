@@ -142,4 +142,8 @@ K SRAM MEMORY
 F http://www.issi.com/WW/pdf/61-64C5128AL.pdf
 $ENDCMP
 #
+$CMP MT48LC16M16A2B4
+F https://ru.mouser.com/datasheet/2/671/256Mb_sdr-1282350.pdf
+$ENDCMP
+#
 #End Doc Library

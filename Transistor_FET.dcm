@@ -121,7 +121,7 @@ F http://www.diodes.com/assets/Datasheets/BS170F.pdf
 $ENDCMP
 #
 $CMP BS250
-D -0.18A Id, -45V Vds, P-Channel MOSFET, TO-92
+D -0.18A Id, -60V Vds, P-Channel MOSFET, TO-92
 K P-Channel MOSFET
 F http://www.vishay.com/docs/70209/70209.pdf
 $ENDCMP
@@ -430,12 +430,6 @@ $CMP BSP129
 D 0.35A Id, 240V Vds, N-Channel MOSFET, SOT-223
 K N-Channel MOSFET
 F https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f
-$ENDCMP
-#
-$CMP BSP89
-D 0.35A Id, 240V Vds, N-Channel Enhancement Mode MOSFET, SOT-223
-K N-Channel MOSFET
-F https://www.infineon.com/dgdl/Infineon-BSP89-DS-v02_02-en.pdf?fileId=db3a30433b47825b013b4b8a07f90d55
 $ENDCMP
 #
 $CMP BSS123
@@ -978,6 +972,12 @@ K NexFET Power MOSFET N-MOS
 F http://www.ti.com/lit/gpn/csd17307q5a
 $ENDCMP
 #
+$CMP CSD17308Q3
+D 50A Id, 30V Vds, NexFET N-Channel Power MOSFET, 12.5mOhm Ron, Qg Typ 3.9nC, VSON8 3.3x3.3mm
+K NexFET Power MOSFET N-MOS
+F http://www.ti.com/lit/ds/symlink/csd17308q3.pdf
+$ENDCMP
+#
 $CMP CSD17310Q5A
 D 100A Id, 30V Vds, NexFET N-Channel Power MOSFET, 5.9mOhm Ron, Qg (typ) 8.9nC, SON8 5x6mm
 K NexFET Power MOSFET N-MOS
@@ -1242,10 +1242,22 @@ K NexFET Power MOSFET N-MOS
 F http://www.ti.com/lit/ds/symlink/csd19537q3.pdf
 $ENDCMP
 #
+$CMP CSD25202W15
+D 4A Id, 20V Vds, NexFET P-Channel Power MOSFET, 21mOhm Ron, WLP-1.5x1.5
+K NexFET Power MOSFET P-MOS
+F http://www.ti.com/lit/ds/symlink/csd25202w15.pdf
+$ENDCMP
+#
 $CMP CSD25302Q2
 D 5A Id, 20V Vds, NexFET P-Channel Power MOSFET, 39mOhm Ron, SON-6
 K NexFET Power MOSFET P-MOS
 F https://www.ti.com/lit/ds/slps234b/slps234b.pdf
+$ENDCMP
+#
+$CMP CSD25402Q3A
+D 76A Id, 20V Vds, NexFET P-Channel Power MOSFET, 74mOhm Ron, SON-8 3.3x3.3mm
+K NexFET Power MOSFET P-MOS
+F http://www.ti.com/lit/ds/symlink/csd25402q3a.pdf
 $ENDCMP
 #
 $CMP DMC2053UVT
@@ -1660,12 +1672,6 @@ $CMP FDS9934C
 D 6.5A Id, 20V Vds, Dual N and P Channel MOSFET, 30mOhm Ron, 4.5V Vgs, SO8L
 K Dual N-Channel P-Channel MOSFET
 F https://www.fairchildsemi.com/datasheets/FD/FDS9934C.pdf
-$ENDCMP
-#
-$CMP FQP27P06
-D -27A Id, -60V Vds, QFET P-Channel MOSFET, TO-220
-K QFET P-Channel MOSFET
-F https://www.onsemi.com/pub/Collateral/FQP27P06-D.PDF
 $ENDCMP
 #
 $CMP IPD50R380CE
@@ -2322,34 +2328,16 @@ K Single N-Channel HEXFET Power MOSFET
 F http://www.irf.com/product-info/datasheets/data/irliz44n.pdf
 $ENDCMP
 #
-$CMP IRLML0030
-D 5.3A Id, 30V Vds, N-Channel HEXFET Power MOSFET, 27mOhm Rds, SOT-23
-K N-Channel HEXFET Power MOSFET
-F https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df
-$ENDCMP
-#
 $CMP IRLML2060
 D 1.2A Id, 60V Vds, N-Channel MOSFET, 480mOhm Rds, SOT-23
 K N-Channel MOSFET
 F https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee
 $ENDCMP
 #
-$CMP IRLML5203
-D -3.0A Id, -30V Vds, P-Channel HEXFET Power MOSFET, 98mOhm Rds, SOT-23
-K P-Channel MOSFET
-F https://www.infineon.com/dgdl/irlml5203pbf.pdf?fileId=5546d462533600a40153566868da261d
-$ENDCMP
-#
 $CMP IRLML6402
 D -3.7A Id, -20V Vds, P-Channel MOSFET, 65mOhm Rds, SOT-23
 K P-Channel MOSFET
 F https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c
-$ENDCMP
-#
-$CMP IRLML9301
-D -3.6A Id, -30V Vds, P-Channel HEXFET Power MOSFET, 64mOhm Rds, SOT-23
-K P-Channel MOSFET
-F https://www.infineon.com/dgdl/irlml9301pbf.pdf?fileId=5546d462533600a401535668e5e42640
 $ENDCMP
 #
 $CMP IRLZ34N
@@ -2472,18 +2460,6 @@ K P-Channel MOSFET
 F http://www.vishay.com/docs/66709/si2319cd.pdf
 $ENDCMP
 #
-$CMP Si2371EDS
-D -3.6A Id, -30V Vds, P-Channel MOSFET, SOT-23
-K P-Channel MOSFET
-F http://www.vishay.com/docs/63924/si2371eds.pdf
-$ENDCMP
-#
-$CMP Si4162DY
-D 19.3A Id, 30V Vds, TrenchFET N-Channel Power MOSFET, SO-8
-K N-Channel MOSFET
-F http://www.vishay.com/docs/68967/si4162dy.pdf
-$ENDCMP
-#
 $CMP Si4532DY
 D 3.9A Id, 30V Vds, Dual N and P Channel MOSFET, 65mOhm Ron, 10V Vgs, SO8L
 K Dual N-Channel P-Channel MOSFET
@@ -2532,12 +2508,6 @@ K P-Channel MOSFET
 F https://www.vishay.com/docs/63684/sis415dnt.pdf
 $ENDCMP
 #
-$CMP SiSS27DN
-D -50A Id, -30V Vds, P-Channel MOSFET, PowerPAK 1212-8 Single
-K P-Channel MOSFET
-F http://www.vishay.com/docs/62847/siss27dn.pdf
-$ENDCMP
-#
 $CMP TP0610L
 D -0.18A Id, -60V Vds, P-Channel MOSFET, TO-92
 K P-Channel MOSFET
@@ -2550,28 +2520,10 @@ K P-Channel MOSFET
 F http://www.vishay.com/docs/70209/70209.pdf
 $ENDCMP
 #
-$CMP TSM2301ACX
-D -2.8A Id, -20V Vds, P-Channel MOSFET, SOT-23
-K P-Channel MOSFET
-F https://www.taiwansemi.com/products/datasheet/TSM2301A_C15.pdf
-$ENDCMP
-#
-$CMP TSM2302CX
-D 3.9A Id, 20V Vds, N-Channel MOSFET, SOT-23
-K N-Channel MOSFET
-F https://www.taiwansemi.com/products/datasheet/TSM2302CX_E1608.pdf
-$ENDCMP
-#
 $CMP VN10LF
 D 0.15A Id, 60V Vds, N-Channel MOSFET, SOT-23
 K N-Channel MOSFET
 F http://www.diodes.com/assets/Datasheets/VN10LF.pdf
-$ENDCMP
-#
-$CMP VNP10N07
-D 10A Id, 70V Vds, N-Channel Power MOSFET, fully autoprotected, TO-220
-K N-Channel Power MOSFET OMNIFET
-F https://www.st.com/resource/en/datasheet/vnp10n07.pdf
 $ENDCMP
 #
 $CMP VP0610L
